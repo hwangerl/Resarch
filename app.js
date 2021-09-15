@@ -12,7 +12,7 @@ const button=document.getElementById('icon');
 button.addEventListener('click',function(){
     let CITY=document.getElementById('search_box').value;
     if(CITY!=""){
-        fetch('https://api.weatherbit.io/v2.0/current/airquality?city='+CITY+'&key=c6adc894dec64406b46fb37a267ce1bf')
+        fetch('https://api.weatherbit.io/v2.0/current/airquality?city='+CITY+'&key='')
             .then(response => response.json())
             .then(data => {
                 document.getElementById('destination').textContent=CITY;
